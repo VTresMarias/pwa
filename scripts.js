@@ -8,7 +8,7 @@ function isWebApp() {
     console.log("this is a webapp");
   } else {
     console.log("this is NOT a webapp");
-    window.location.replace("/NotAPWA");
+    window.location.replace("/pwa/NotAPWA");
   }
 }
 // code: https://sitepoint.com/get-url-parameters-with-javascript 
