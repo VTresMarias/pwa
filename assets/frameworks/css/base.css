@@ -1,0 +1,57 @@
+[centre] {
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+[navBtns] {
+  position: absolute;
+  bottom: 0;
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  text-align: center;
+  z-index: 10;
+}
+[navBtns] > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* 101: https://www.w3schools.com/cssref/css_selectors.php */
+[id^="cont-"] {
+  padding: 7.5rem 1rem;
+  display: none;
+}
+[id^="cont-"] > * { margin: 0; }
+
+[mariaLogo] {
+  display: block;
+  width: 25rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+[mariaProfile] {
+  text-align: center;
+  padding: 1rem;
+}
+[mariaProfile] > * { margin: 0; }
+[mariaProfile] > img {
+  margin: 0 auto !important;
+  width: 20rem;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[mariaProfile] > p { font-style: italic; }
+img[alt$="🍃"] { border: 0.5rem solid #793a80; }
+img[alt$="🪷"] { border: 0.5rem solid #66a898; }
+img[alt$="🌸"] { border: 0.5rem solid #f0a9a9; }

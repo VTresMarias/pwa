@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="VTresMarias">
-    <title>HOME</title>
+    <title>V三人のマリアLITE</title>
     <link rel="icon" href="https://vtresmarias.github.io/assets/web/favicon_light.png" type="image/x-icon">
     <link rel="icon" href="https://vtresmarias.github.io/assets/web/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" href="https://vtresmarias.github.io/assets/web/favicon_light.png" type="image/x-icon">
@@ -13,10 +13,10 @@
     <meta name="og:title" content="V三人のマリアLITE">
     <meta name="og:image" content="media/screenshot_landscape_1.png">
     <meta name="og:url" content="/pwa">
-    <meta name="og:description" content="the PWA version of the Marias' website🍃🪷🌸">
+    <meta name="og:description" content="the PWA version of the VTuber Collective🍃🪷🌸">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thebelovedmoon">
-    <meta name="twitter:creator" content="@thebelovedmoon">
+    <meta name="twitter:site" content="@VTresMarias">
+    <meta name="twitter:creator" content="@VTresMarias">
     <meta name="theme-color" content="#dcc6bb" media="(prefers-color-scheme: light)">
     <meta name="msapplication-TileColor" content="#dcc6bb" media="(prefers-color-scheme: light)">
     <meta name="msapplication-navbutton-color" content="#dcc6bb" media="(prefers-color-scheme: light)">
@@ -26,41 +26,102 @@
     <meta name="msapplication-navbutton-color" content="#3d374c" media="(prefers-color-scheme: dark)">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c" media="(prefers-color-scheme: dark)">
     <!-- custom css -->
-    <link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <link rel="stylesheet" href="assets/frameworks/css/_main.css" type="text/css" media="all"> <!-- base -->
     <style type="text/css">
-      /* attach in-html custom css args here */
-      .centerFeed {
-        padding: 250px 15px;
-      }
+      /* in-page css */
+      @import url("assets/frameworks/css/base.css");
     </style>
-    <!-- custom scripts -->
-    <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <!-- custom js -->
+    <script src="assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
+    <script src="assets/frameworks/js/index.js" type="text/javascript"></script>
     <script type="text/javascript">
-      function launch() {
-        // launch javascript args here
-        isWebApp();
+      function pageInit() {
+        // pageInit() args here
+        navQuery();
       }
     </script>
     <script type="text/javascript">
-      // attach in-html custom javascript args here
+      // in-page javascript
     </script>
   </head>
-  <body onload="launch()">
-    <div class="centerFeed">
-      <h1>PWA app is currently under renovation!!</h1>
-      <p>
-        the Marias are very hard at work to bring the new version of the PWA to you!!
-        don't worry, it will feature the same elements as the original website, but in
-        a mobile-friendly format!!
-      </p>
-      <p>you can check on our progress on GitHub using the button below:</p>
-      <button onclick="window.open('https://github.com/VTresMarias/pwa')">VTresMarias/pwa on GitHub</button>
-      <br>
-      <button onclick="window.open('https://vtresmarias.github.io')">original website</button>
-      <br><br>
-      <footer>
-        ©2022 「VTresMarias - V三人のマリア - 」
-      </footer>
+  <body onload="init()">
+    <div centre>
+      <div navBtns> <!-- navigational buttons -->
+        <div>
+          <span id="btn-home" class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
+          <span id="btn-lore" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?vtm=story')">book</span>
+          <span id="btn-letr" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?vtm=letter')">mail</span>
+          <span id="btn-prss" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?vtm=press')">newspaper</span>
+          <span id="btn-cert" class="material-symbols-rounded" title="certificate validator" onclick="window.location.replace('/?vtm=cert')">license</span>
+        </div>
+      </div>
+      <div> <!-- content -->
+        <div id="cont-home" class="pwaContent"> <!-- /pwa -->
+          <picture mariaLogo>
+            <source srcset="assets/images/logo_dark.svg" media="(prefers-color-scheme: dark)">
+            <img src="assets/images/logo_light.svg" alt="">
+          </picture>
+          <br><br><br><br><br><br>
+          <h1 style="text-align: center;">home of the VTuber Collective</h1>
+          <br>
+          <p>
+            since 27 Dec 2022, 「VTresMarias - V三人のマリア - 」 takes pride in uplifting
+            the spirits of our VTubers -- called the Marias -- as they tackle on any
+            challenge that comes their way together.
+          </p>
+          <br>
+          <p>
+            the Marias were chosen for their personal connections with the First Maria🍃,
+            alongside their unwavering commitment to serving their community with the best
+            they can.
+          </p>
+          <br><br><br><br><br><br>
+          <h1 style="text-align: center;">meet the Marias</h1>
+          <br>
+          <div mariaProfile>
+            <img src="https://vtresmarias.github.io/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
+            <br>
+            <h2>Mother Agatha</h2>
+            <p>the First Maria🍃</p>
+            <br>
+            <h4>我慢 ～Perseverance～</h4>
+            <p>debuted 27 Dec 2023</p>
+          </div>
+          <div mariaProfile>
+            <img src="https://vtresmarias.github.io/assets/images/profile/maria_pfp_2.png" alt="Aura Ostara, the Second Maria🪷">
+            <br>
+            <h2>Aura Ostara</h2>
+            <p>the Second Maria🪷</p>
+            <br>
+            <h4>復活 ～Rebirth～</h4>
+            <p>debuted 30 Jun 2022</p>
+          </div>
+          <div mariaProfile>
+            <img src="https://vtresmarias.github.io/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
+            <br>
+            <h2>Hina Oujo</h2>
+            <p>the Third Maria🌸</p>
+            <br>
+            <h4>落ち着き ～Stability～</h4>
+            <p>debuted 3 Jul 2022</p>
+          </div>
+        </div>
+        <div id="cont-lore" class="pwaContent"> <!-- /pwa?vtm=story -->
+          <picture mariaLogo>
+            <source srcset="assets/images/firstMaria_story_dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/images/firstMaria_story_light.png" alt="">
+          </picture>
+        </div>
+        <div id="cont-letr" class="pwaContent"> <!-- /pwa?vtm=letter -->
+          <p>letr</p>
+        </div>
+        <div id="cont-prss" class="pwaContent"> <!-- /pwa?vtm=press -->
+          <p>prss</p>
+        </div>
+        <div id="cont-cert" class="pwaContent"> <!-- /pwa?vtm=cert -->
+          <p>cert</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

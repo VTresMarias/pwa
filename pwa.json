@@ -7,29 +7,29 @@
     "lifestyle",
     "social"
   ],
-  "description": "home of the Marias, est. 27 Dec 2022🍃🪷🌸",
+  "description": "the home of the Marias and the Sub-Collectives, est. 2022🍃🪷🌸",
   "display": "standalone",
   "icons": [
     {
-      "src": "media/pwaIcon_192.png",
+      "src": "assets/images/pwa/pwaIcon_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "media/pwaIcon_512.png",
+      "src": "assets/images/pwa/pwaIcon_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "media/pwaMaskable_192.png",
+      "src": "assets/images/pwa/pwaMaskable_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "media/pwaMaskable_512.png",
+      "src": "assets/images/pwa/pwaMaskable_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -42,46 +42,10 @@
       "url": "story?isWebApp=1",
       "icons": [
         {
-          "src": "media/maria_0.png",
+          "src": "assets/images/pwa/maria_0.png",
           "type": "image/png",
           "sizes": "192x192",
-          "description": "\"the story of the First Maria, is also the story of what it has become.\""
-        }
-      ]
-    },
-    {
-      "name": "the First Maria🍃",
-      "url": "/pwa?isWebApp=1&mariaDef=1",
-      "icons": [
-        {
-          "src": "media/maria_1.png",
-          "type": "image/png",
-          "sizes": "192x192",
-          "description": "visit the website of the First Maria🍃"
-        }
-      ]
-    },
-    {
-      "name": "the Second Maria🪷",
-      "url": "/pwa?isWebApp=1&mariaDef=2",
-      "icons": [
-        {
-          "src": "media/maria_2.png",
-          "type": "image/png",
-          "sizes": "192x192",
-          "description": "visit the website of the Second Maria🪷"
-        }
-      ]
-    },
-    {
-      "name": "the Third Maria🌸",
-      "url": "/pwa?isWebApp=1&mariaDef=3",
-      "icons": [
-        {
-          "src": "media/maria_3.png",
-          "type": "image/png",
-          "sizes": "192x192",
-          "description": "visit the website of the Third Maria🌸"
+          "description": "\"the story of the First Maria, is also the story of what it has become.🍃🪷🌸\""
         }
       ]
     }
@@ -105,37 +69,37 @@
   ],
   "screenshots": [
     {
-      "src": "media/screenshot_landscape_1.png",
+      "src": "assets/images/pwa/screenshot_landscape_1.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide"
     },
     {
-      "src": "media/screenshot_landscape_2.png",
+      "src": "assets/images/pwa/screenshot_landscape_2.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide"
     },
     {
-      "src": "media/screenshot_landscape_3.png",
+      "src": "assets/images/pwa/screenshot_landscape_3.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide"
     },
     {
-      "src": "media/screenshot_portrait_1.png",
+      "src": "assets/images/pwa/screenshot_portrait_1.png",
       "type": "image/png",
       "sizes": "1080x1920",
       "form_factor": "narrow"
     },
     {
-      "src": "media/screenshot_portrait_2.png",
+      "src": "assets/images/pwa/screenshot_portrait_2.png",
       "type": "image/png",
       "sizes": "1080x1920",
       "form_factor": "narrow"
     },
     {
-      "src": "media/screenshot_portrait_3.png",
+      "src": "assets/images/pwa/screenshot_portrait_3.png",
       "type": "image/png",
       "sizes": "1080x1920",
       "form_factor": "narrow"
