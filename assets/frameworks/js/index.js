@@ -12,12 +12,16 @@ function navQuery() {
     document.getElementById("btn-lore").classList.add("iconActive");
     document.getElementById("cont-lore").style.display = "block";
 
+    importCSS("@import url('assets/frameworks/css/nav/story.css');");
+
   } else if (vtm == "letter") {
 
     document.title = "LETTERS";
     
     document.getElementById("btn-letr").classList.add("iconActive");
     document.getElementById("cont-letr").style.display = "block";
+
+    importCSS("@import url('assets/frameworks/css/nav/letter.css');");
 
   } else if (vtm == "press") {
 
@@ -26,6 +30,8 @@ function navQuery() {
     document.getElementById("btn-prss").classList.add("iconActive");
     document.getElementById("cont-prss").style.display = "block";
 
+    importCSS("@import url('assets/frameworks/css/nav/press.css');");
+
   } else if (vtm == "cert") {
 
     document.title = "CERTIFICATE";
@@ -33,12 +39,16 @@ function navQuery() {
     document.getElementById("btn-cert").classList.add("iconActive");
     document.getElementById("cont-cert").style.display = "block";
 
+    importCSS("@import url('assets/frameworks/css/nav/cert.css');");
+
   } else {
 
     document.title = "HOME";
     
     document.getElementById("btn-home").classList.add("iconActive");
     document.getElementById("cont-home").style.display = "block";
+
+    importCSS("@import url('assets/frameworks/css/nav/home.css');");
 
   }
 

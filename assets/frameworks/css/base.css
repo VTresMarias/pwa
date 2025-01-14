@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+.spc { /* replace <br> x6 */
+  width: 100%;
+  height: 7.5rem;
+}
+
 [navBtns] {
   position: absolute;
   bottom: 0;
@@ -25,33 +30,15 @@
 
 /* 101: https://www.w3schools.com/cssref/css_selectors.php */
 [id^="cont-"] {
-  padding: 7.5rem 1rem;
+  padding: 7.5rem 1rem calc(7.5rem + calc(7.5rem / 2)) 1rem;
   display: none;
 }
 [id^="cont-"] > * { margin: 0; }
 
 [mariaLogo] {
   display: block;
-  width: 25rem;
+  width: 37.5rem;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
-
-[mariaProfile] {
-  text-align: center;
-  padding: 1rem;
-}
-[mariaProfile] > * { margin: 0; }
-[mariaProfile] > img {
-  margin: 0 auto !important;
-  width: 20rem;
-  border-radius: 50%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-[mariaProfile] > p { font-style: italic; }
-img[alt$="🍃"] { border: 0.5rem solid #793a80; }
-img[alt$="🪷"] { border: 0.5rem solid #66a898; }
-img[alt$="🌸"] { border: 0.5rem solid #f0a9a9; }

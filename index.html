@@ -9,14 +9,6 @@
     <link rel="icon" href="https://vtresmarias.github.io/assets/web/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" href="https://vtresmarias.github.io/assets/web/favicon_light.png" type="image/x-icon">
     <link rel="manifest" href="pwa.json"> <!-- PWA -->
-    <meta name="og:type" content="website">
-    <meta name="og:title" content="V三人のマリアLITE">
-    <meta name="og:image" content="media/screenshot_landscape_1.png">
-    <meta name="og:url" content="/pwa">
-    <meta name="og:description" content="the PWA version of the VTuber Collective🍃🪷🌸">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@VTresMarias">
-    <meta name="twitter:creator" content="@VTresMarias">
     <meta name="theme-color" content="#dcc6bb" media="(prefers-color-scheme: light)">
     <meta name="msapplication-TileColor" content="#dcc6bb" media="(prefers-color-scheme: light)">
     <meta name="msapplication-navbutton-color" content="#dcc6bb" media="(prefers-color-scheme: light)">
@@ -37,6 +29,7 @@
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
+        isPWA();
         navQuery();
       }
     </script>
@@ -48,20 +41,20 @@
     <div centre>
       <div navBtns> <!-- navigational buttons -->
         <div>
-          <span id="btn-home" class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
-          <span id="btn-lore" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?vtm=story')">book</span>
-          <span id="btn-letr" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?vtm=letter')">mail</span>
-          <span id="btn-prss" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?vtm=press')">newspaper</span>
-          <span id="btn-cert" class="material-symbols-rounded" title="certificate validator" onclick="window.location.replace('/?vtm=cert')">license</span>
+          <span id="btn-home" class="material-symbols-rounded" title="home" onclick="window.location.replace('/?isPWA=1')">home</span>
+          <span id="btn-lore" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?isPWA=1&vtm=story')">book</span>
+          <span id="btn-letr" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?isPWA=1&vtm=letter')">mail</span>
+          <span id="btn-prss" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?isPWA=1&vtm=press')">newspaper</span>
+          <span id="btn-cert" class="material-symbols-rounded" title="certificate validator" onclick="window.location.replace('/?isPWA=1&vtm=cert')">license</span>
         </div>
       </div>
       <div> <!-- content -->
-        <div id="cont-home" class="pwaContent"> <!-- /pwa -->
+        <div id="cont-home"> <!-- /pwa -->
           <picture mariaLogo>
             <source srcset="assets/images/logo_dark.svg" media="(prefers-color-scheme: dark)">
             <img src="assets/images/logo_light.svg" alt="">
           </picture>
-          <br><br><br><br><br><br>
+          <div class="spc"></div>
           <h1 style="text-align: center;">home of the VTuber Collective</h1>
           <br>
           <p>
@@ -75,7 +68,7 @@
             alongside their unwavering commitment to serving their community with the best
             they can.
           </p>
-          <br><br><br><br><br><br>
+          <div class="spc"></div>
           <h1 style="text-align: center;">meet the Marias</h1>
           <br>
           <div mariaProfile>
@@ -86,6 +79,8 @@
             <br>
             <h4>我慢 ～Perseverance～</h4>
             <p>debuted 27 Dec 2023</p>
+            <br>
+            <span class="material-symbols-rounded" title="view wevsite" onclick="window.open('https://thebelovedmoon.github.io')">public</span>
           </div>
           <div mariaProfile>
             <img src="https://vtresmarias.github.io/assets/images/profile/maria_pfp_2.png" alt="Aura Ostara, the Second Maria🪷">
@@ -95,6 +90,8 @@
             <br>
             <h4>復活 ～Rebirth～</h4>
             <p>debuted 30 Jun 2022</p>
+            <br>
+            <span class="material-symbols-rounded" title="view wevsite" onclick="window.open('https://thebelovedmoon.github.io/auraostara')">public</span>
           </div>
           <div mariaProfile>
             <img src="https://vtresmarias.github.io/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
@@ -104,21 +101,55 @@
             <br>
             <h4>落ち着き ～Stability～</h4>
             <p>debuted 3 Jul 2022</p>
+            <br>
+            <span class="material-symbols-rounded" title="view wevsite" onclick="window.open('https://thebelovedmoon.github.io/hinaoujo')">public</span>
+          </div>
+          <div class="spc"></div>
+          <h1 style="text-align: center;">the Marias' Core Values</h1>
+          <br>
+          <div mariaValues>
+            <h2>一味</h2>
+            <h2>Universality</h2>
+            <br>
+            <p>
+              the Marias' main focus is to wholeheartedly recognize people regardless of who
+              they are, without any fear of discrimination and oppression from all parties.
+            </p>
+          </div>
+          <div mariaValues>
+            <h2>了承</h2>
+            <h2>Acceptance</h2>
+            <br>
+            <p>
+              the Collective's stance stems from the genuine love of one, where a love can
+              become the driving force in making the world a better place for everyone.
+            </p>
+          </div>
+          <div class="spc"></div>
+          <div class="wantFullVer">
+            <h2>want to see the full version?</h2>
+            <br>
+            <p>
+              if you want the full experience with added features and graphics, click the
+              button below:
+            </p>
+            <br>
+            <button onclick="window.open('https://vtresmarias.github.io')">official website</button>
           </div>
         </div>
-        <div id="cont-lore" class="pwaContent"> <!-- /pwa?vtm=story -->
+        <div id="cont-lore"> <!-- /pwa?vtm=story -->
           <picture mariaLogo>
             <source srcset="assets/images/firstMaria_story_dark.png" media="(prefers-color-scheme: dark)">
             <img src="assets/images/firstMaria_story_light.png" alt="">
           </picture>
         </div>
-        <div id="cont-letr" class="pwaContent"> <!-- /pwa?vtm=letter -->
+        <div id="cont-letr"> <!-- /pwa?vtm=letter -->
           <p>letr</p>
         </div>
-        <div id="cont-prss" class="pwaContent"> <!-- /pwa?vtm=press -->
+        <div id="cont-prss"> <!-- /pwa?vtm=press -->
           <p>prss</p>
         </div>
-        <div id="cont-cert" class="pwaContent"> <!-- /pwa?vtm=cert -->
+        <div id="cont-cert"> <!-- /pwa?vtm=cert -->
           <p>cert</p>
         </div>
       </div>

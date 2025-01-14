@@ -6,6 +6,12 @@
     background-color: #dcc6bb;
     box-shadow: 0 0 4px #3d374c40, 0 4px 8px #3d374c80;
   }
+  button {
+    background-color: #3d374c;
+    color: #dcc6bb;
+    box-shadow: #3d374c 0px 3px 6px;
+  }
+  button:hover { background-color: #332e3f; }
 }
 @media (prefers-color-scheme: dark) {
   html { background-color: #3d374c; }
@@ -14,6 +20,12 @@
     background-color: #3d374c;
     box-shadow: 0 0 4px #dcc6bb40, 0 4px 8px #dcc6bb80;
   }
+  button {
+    background-color: #dcc6bb;
+    color: #3d374c;
+    box-shadow: #dcc6bb 0px 3px 6px;
+  }
+  button:hover { background-color: #c0ada4; }
 }
 
 /* dynamic fontsize */
