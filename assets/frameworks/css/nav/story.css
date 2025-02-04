@@ -1,0 +1,10 @@
+img { margin: 0 auto !important; }
+.motherPreq { text-align: center !important; }
+.motherPreq > * { margin: 0; }
+.mother2019 {
+  width: 37.5rem;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9 !important;
+  border-radius: 7.5px;
+}
