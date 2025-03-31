@@ -24,7 +24,7 @@ function isMaria() {
     default:
       // some of isPWA() code is in here cuz for some reason the html does not read the codeblock lmao
       var isPWA = new URLSearchParams(window.location.search).get("isPWA");
-      if (isPWA == null) { window.location.replace("/notPWA"); } else { window.location.replace("/?isPWA=1"); }
+      if (isPWA == null) { window.location.replace("/notPWA"); } else { window.location.replace("/pwa?isPWA=1"); }
       break;
   }
 
